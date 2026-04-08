@@ -173,6 +173,16 @@ style="background:#64748b;margin-top:0.8rem;">
 		// ── STATE ──────────────────────────────────────────────
 let notes = []; // each entry: { id, title, content }
 let nextId = 1;
+
+// ── DOM REFERENCES ────────────────────────────────────
+const notesContainer = document.getElementById("notesContainer");
+const titleInput = document.getElementById("noteTitle");
+const contentInput = document.getElementById("noteContent");
+const addBtn = document.getElementById("addNoteBtn");
+const clearAllBtn = document.getElementById("clearAllBtn");
+const noteCounterSpan = document.getElementById("noteCounter");
+const windowSizeSpan = document.getElementById("windowSize");
+const userAgentSpan = document.getElementById("userAgent");
 	</script>
 	
 </body>
