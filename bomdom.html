@@ -196,6 +196,17 @@ while (notesContainer.firstChild) {
 notesContainer.removeChild(notesContainer.firstChild);
 }
 // (rest of the function comes in the next step)
+// ── empty-state message ──
+if (notes.length === 0) {
+const emptyMsg = document.createElement("div");
+emptyMsg.textContent = "📭📭 No notes yet. Add your first note!";
+emptyMsg.style.color = "#94a3b8";
+emptyMsg.style.textAlign = "center";
+emptyMsg.style.padding = "1rem";
+notesContainer.appendChild(emptyMsg);
+updateCounter();
+return;
+}
 }
 	</script>
 	
