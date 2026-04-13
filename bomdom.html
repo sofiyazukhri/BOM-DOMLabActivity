@@ -50,6 +50,11 @@
             border-left: 4px solid #3b82f6; padding-left: 0.7rem;
 		}
 
+		footer {
+text-align: center; margin-top: 2rem;
+font-size: 0.7rem; color: #5b6e8c;
+}
+
 		.form-group { margin-bottom: 1rem; }
         label {
         font-weight: 600; font-size: 0.8rem;
@@ -138,6 +143,11 @@ hr { margin: 1rem 0; }
 		<button id="addNotBtn">+ Add Note</button>
 		<div class="counter" id="noteContent">0 notes</div>
 	</div>
+
+	<footer>
+		💡💡 BOM: confirm() on delete · alert() on empty title
+· resize event updates window size.
+	</footer>
 
 		<div class="card" id="right-panel">
 			<h2>📋📋 Your notes</h2>
@@ -333,6 +343,7 @@ clearAllBtn.addEventListener("click", clearAllNotes);
 init(); // ← call init when the page loads
 
 	</script>
+
 	
 </body>
 </html>
