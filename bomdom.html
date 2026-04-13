@@ -323,6 +323,15 @@ renderNotes();
 }
 }
 
+function init() {
+addSampleNotes(); // populate demo notes
+updateWindowSize(); // BOM: show current size
+showUserAgent(); // BOM: show user agent
+addBtn.addEventListener("click", addNote);
+clearAllBtn.addEventListener("click", clearAllNotes);
+}
+init(); // ← call init when the page loads
+
 	</script>
 	
 </body>
